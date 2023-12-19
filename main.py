@@ -11,7 +11,7 @@ def count_letter_occurrence(text):
     answer[char] = text.lower().count(char)
   tuple_list = sorted(answer.items(), key=lambda x: x[1], reverse=True)
   for item in tuple_list:
-    print(f"The '{item[0]}' was found {item[1]} times")
+    print(f"The '{item[0]}' character was found {item[1]} times")
 
 
 with open("books/frankenstein.txt") as f:
